@@ -1,14 +1,14 @@
 import math
 
-#x = int(input('Enter the number \'x\': '))
-#y = int(input('Enter another number: '))
+# x = int(input('Enter the number \'x\': '))
+# y = int(input('Enter another number: '))
 
 x = 2
 y = 5
 
 print('x = ', x)
 print('y = ', y)
-print(x, 'to the power of',y,'is', int(math.pow(x,y)))
+print(x, 'to the power of', y, 'is', int(math.pow(x, y)))
 print('log(x) = ', math.log2(x))
 
 
