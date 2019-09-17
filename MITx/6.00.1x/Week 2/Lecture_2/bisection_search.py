@@ -10,8 +10,9 @@ choice = None
 while(True):
     answer = int((low + high)/2)
     print('Is your secret number ', answer)
-    choice = str.lower(input('Enter \'h\' to indicate the guess is too high. Enter \'l\' to indicate the guess is too low. \
-    Enter \'c\' to indicate I guessed correctly'))
+    choice = str.lower(input('Enter \'h\' to indicate the guess is too high. \
+                              Enter \'l\' to indicate the guess is too low. \
+                              Enter \'c\' to indicate I guessed correctly'))
 
     if(choice == 'l'):
         low = answer
@@ -24,5 +25,5 @@ while(True):
         break
     else:
         print('Sorry, I did not understand your input')
-print('Game over', end =' ')
-print('Your secret number is ', answer)        
+print('Game over', end=' ')
+print('Your secret number is ', answer)
