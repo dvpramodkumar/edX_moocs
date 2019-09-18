@@ -1,14 +1,14 @@
-.37# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 """
 Created on Wed Jun  8 12:13:04 2016
 
 @author: ericgrimson
 """
 
-x = float(input('Enter a decimal number between 0 and 1: '))
+x = 0.375  # float(input('Enter a decimal number between 0 and 1: '))
 
 p = 0
-while ((2**p)*x)%1 != 0:
+while ((2**p)*x) % 1 != 0:
     print('Remainder = ' + str((2**p)*x - int((2**p)*x)))
     p += 1
 
@@ -18,7 +18,7 @@ result = ''
 if num == 0:
     result = '0'
 while num > 0:
-    result = str(num%2) + result
+    result = str(num % 2) + result
     num = num//2
 
 for i in range(p - len(result)):
