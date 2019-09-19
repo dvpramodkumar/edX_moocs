@@ -5,6 +5,7 @@ Created on Wed Jun  8 12:33:30 2016
 @author: ericgrimson
 """
 
+
 def isPalindrome(s):
 
     def toChars(s):
@@ -22,6 +23,7 @@ def isPalindrome(s):
             return s[0] == s[-1] and isPal(s[1:-1])
 
     return isPal(toChars(s))
+
 
 print("")
 print('Is eve a palindrome?')
